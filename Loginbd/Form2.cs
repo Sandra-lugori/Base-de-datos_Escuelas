@@ -35,7 +35,7 @@ namespace Loginbd
         private void butreg_Click(object sender, EventArgs e)
         {
             string connect = "datasource=localhost;port=3306;username=root;password=;database=tienda";
-            string query = "INSERT INTO empleado where user = '" + userTxtBox.Text + "' AND password = '" + pwTxtBox.Text + "' "; //Es insert no select
+            string query = "INSERT INTO empleado(`ID`, `User`, `Password`) VALUES (NULL, '"+userTxtBox.Text + "' , '" + pwTxtBox.Text + "') ";
             MySqlConnection databaseConnection = new MySqlConnection(connect);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
             commandDatabase.CommandTimeout = 10;
