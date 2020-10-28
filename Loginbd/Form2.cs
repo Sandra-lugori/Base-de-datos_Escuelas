@@ -45,7 +45,7 @@ namespace Loginbd
             {
                 databaseConnection.Open();
                 MySqlDataReader reader = commandDatabase.ExecuteReader();
-                MessageBox.Show("Bienvenido, te has registrado :D ");
+                MessageBox.Show("¡Bienvenido! Te has registrado :D ");
                 databaseConnection.Close();
             }
             catch (Exception ex)
