@@ -75,5 +75,10 @@ namespace Loginbd
             Form2 registrar = new Form2();
             registrar.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
